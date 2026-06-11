@@ -1,0 +1,13 @@
+[project]
+name = "proffssv.site"
+version = "1.0.0"
+description = "MkDocs documentation site for proffssv.site"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.0"
+mkdocs-material = "^9.4.0"
