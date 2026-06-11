@@ -1,7 +1,7 @@
 site_name: proffssv.site
 site_url: https://proffssv.site
 repo_url: https://github.com/Serg2206/proffssv.site
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 theme:
   name: material
@@ -26,7 +26,7 @@ theme:
     - content.code.annotate
   icon:
     logo: material/account-heart
-  favicon: assets/favicon.png
+  favicon: assets/favicon.svg
 
 extra:
   social:
@@ -46,8 +46,18 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Главная: index.md
