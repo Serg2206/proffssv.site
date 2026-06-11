@@ -1,5 +1,5 @@
 site_name: proffssv.site
-site_url: https://Serg2206.github.io/proffssv.site/
+site_url: https://proffssv.site
 repo_url: https://github.com/Serg2206/proffssv.site
 edit_uri: edit/main/docs/
 
@@ -24,6 +24,21 @@ theme:
     - navigation.indexes
     - content.code.copy
     - content.code.annotate
+  icon:
+    logo: material/account-heart
+  favicon: assets/favicon.png
+
+extra:
+  social:
+    - icon: material/youtube
+      link: https://www.youtube.com/@SSVproff-22.06
+      name: YouTube
+    - icon: material/coffee
+      link: https://www.buymeacoffee.com/ssvproff
+      name: Buy Me a Coffee
+    - icon: material/book-open-variant
+      link: https://github.com/Serg2206/proffssv.site
+      name: GitHub
 
 plugins:
   - search
@@ -35,5 +50,8 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - Главная: index.md
+  - О проекте: about.md
+  - Поддержать: support.md
+  - Консультации: consultations.md
+  - Рекомендую: recommend.md
