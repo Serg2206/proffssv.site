@@ -24,9 +24,11 @@ theme:
     - navigation.indexes
     - content.code.copy
     - content.code.annotate
+    - search.suggest
+    - search.highlight
   icon:
     logo: material/account-heart
-  favicon: assets/favicon.png
+  favicon: assets/favicon.svg
 
 extra:
   social:
@@ -48,6 +50,12 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 
 nav:
   - Главная: index.md
