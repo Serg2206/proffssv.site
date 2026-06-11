@@ -1,13 +1,36 @@
-# Python
+```
+# Dependencies
 __pycache__/
-*.py[cod]
-.venv/
+*.pyc
+*.pyo
+*.pyd
+.Python
 venv/
+.venv/
+.env
+.env.local
+.env.*
 
-# OS / editor
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# System
 .DS_Store
 Thumbs.db
-*.tmp
-
-# MkDocs build
-site/
+```
