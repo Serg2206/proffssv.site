@@ -1,57 +1,73 @@
-site_name: proffssv.site
+site_name: Профессор Сушков
+site_description: Хирург. Исследователь. Автор.
 site_url: https://proffssv.site
 repo_url: https://github.com/Serg2206/proffssv.site
+repo_name: Serg2206/proffssv.site
 edit_uri: edit/main/docs/
 
 theme:
   name: material
+  language: ru
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Переключить на тёмную тему
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Переключить на светлую тему
   features:
     - navigation.tracking
     - navigation.expand
     - navigation.indexes
+    - navigation.top
     - content.code.copy
     - content.code.annotate
+    - search.suggest
+    - search.highlight
   icon:
     logo: material/account-heart
-  favicon: assets/favicon.png
 
 extra:
   social:
-    - icon: material/youtube
+    - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@SSVproff-22.06
       name: YouTube
-    - icon: material/coffee
-      link: https://www.buymeacoffee.com/ssvproff
-      name: Buy Me a Coffee
-    - icon: material/book-open-variant
+    - icon: fontawesome/brands/github
       link: https://github.com/Serg2206/proffssv.site
       name: GitHub
+    - icon: fontawesome/regular/handshake
+      link: https://www.buymeacoffee.com/ssvproff
+      name: Поддержать проект
+
+copyright: "&copy; 2024 Профессор Сушков"
 
 plugins:
-  - search
+  - search:
+      lang:
+        - ru
+        - en
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - toc:
       permalink: true
+      permalink_title: Постоянная ссылка
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - Главная: index.md
   - О проекте: about.md
-  - Поддержать: support.md
-  - Консультации: consultations.md
-  - Рекомендую: recommend.md

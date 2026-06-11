@@ -1,6 +1,0 @@
-[project]
-name = "proffssv.site"
-version = "1.0.0"
-description = "Site sources"
-readme = "docs/index.md"
-requires-python = ">=3.11"
