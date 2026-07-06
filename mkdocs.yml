@@ -1,7 +1,10 @@
 site_name: proffssv.site
 site_url: https://proffssv.site
+site_description: Образовательная платформа профессора Сушкова С.В. — курсы, лекции, статьи по хирургии и онкологии.
+site_author: Prof. Sergey V. Sushkov
 repo_url: https://github.com/Serg2206/proffssv.site
 edit_uri: edit/master/docs/
+copyright: "© 2026 Prof. Sergey V. Sushkov. Все материалы предназначены для образовательных целей."
 
 theme:
   name: material
@@ -30,15 +33,15 @@ theme:
 
 extra:
   social:
-    - icon: material/youtube
+    - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@SSVproff-22.06
       name: YouTube
+    - icon: fontawesome/brands/github
+      link: https://github.com/Serg2206
+      name: GitHub
     - icon: material/coffee
       link: https://www.buymeacoffee.com/ssvproff
       name: Buy Me a Coffee
-    - icon: material/book-open-variant
-      link: https://github.com/Serg2206/proffssv.site
-      name: GitHub
 
 plugins:
   - search
@@ -47,6 +50,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - meta
   - toc:
       permalink: true
   - pymdownx.highlight:
