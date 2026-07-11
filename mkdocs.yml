@@ -73,6 +73,16 @@ nav:
       - Международный медицинский туризм: expertise/medical-tourism.md
       - Академическое сотрудничество: expertise/academic-cooperation.md
       - AI и цифровая медицина: expertise/ai-digital-medicine.md
+  - Статьи:
+      - Все статьи: articles/index.md
+      - "«Тихое давление»: оперировать высокий риск": articles/quiet-pressure.md
+      - Второе мнение перед операцией: articles/second-opinion-checklist.md
+      - Анатомия отказа журнала: articles/anatomy-of-rejection.md
+      - Дорожная карта соискателя: articles/dissertation-roadmap.md
+      - Пять вопросов зарубежной клинике: articles/five-questions-abroad.md
+      - Руки — первый ум хирурга: articles/hands-first-mind.md
+      - Биомаркеры перитонита: articles/peritonitis-biomarkers.md
+      - AI в неотложной хирургии: articles/ai-emergency-surgery.md
   - Курсы:
       - Основы лапароскопической холецистэктомии: courses/laparoscopic-cholecystectomy-basics.md
   - Консультации: consultations.md

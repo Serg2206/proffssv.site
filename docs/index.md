@@ -45,6 +45,7 @@ author: Prof. Sergey V. Sushkov
 
 - [О профессоре](./about.md)
 - [Экспертная деятельность](./expertise/index.md)
+- [Статьи](./articles/index.md)
 - [Консультации](./consultations.md)
 - [Рекомендую](./recommend.md)
 - [Поддержать](./support.md)
