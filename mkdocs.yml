@@ -65,7 +65,8 @@ markdown_extensions:
 
 nav:
   - Главная: index.md
-  - О проекте: about.md
+  - О профессоре: about.md
+  - Экспертная деятельность: expert.md
   - Курсы:
       - Основы лапароскопической холецистэктомии: courses/laparoscopic-cholecystectomy-basics.md
   - Консультации: consultations.md
