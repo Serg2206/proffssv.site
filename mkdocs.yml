@@ -66,6 +66,8 @@ markdown_extensions:
 nav:
   - Главная: index.md
   - О проекте: about.md
-  - Поддержать: support.md
+  - Курсы:
+      - Основы лапароскопической холецистэктомии: courses/laparoscopic-cholecystectomy-basics.md
   - Консультации: consultations.md
   - Рекомендую: recommend.md
+  - Поддержать: support.md
