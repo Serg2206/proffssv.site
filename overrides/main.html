@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.title and not page.is_homepage %}
+    {% set title = page.title ~ " — Профессор Сушков С.В." %}
+  {% endif %}
+  {% set desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set image = config.site_url ~ "assets/og-cover.png" %}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Профессор Сушков С.В.">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="{{ page.canonical_url if page else config.site_url }}">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  <meta name="twitter:image" content="{{ image }}">
+
+  <!-- Schema.org: Physician -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Профессор Сушков Сергей Валентинович",
+    "alternateName": "Prof. Sergey V. Sushkov",
+    "url": "https://proffssv.site",
+    "image": "https://proffssv.site/assets/og-cover.png",
+    "medicalSpecialty": ["Surgical", "Oncologic"],
+    "jobTitle": "Профессор, доктор медицинских наук, врач-хирург высшей категории",
+    "telephone": "+380675707949",
+    "email": "ssvnauka@gmail.com",
+    "knowsLanguage": ["ru", "uk", "en"],
+    "sameAs": [
+      "https://www.youtube.com/@SSVproff-22.06",
+      "https://github.com/Serg2206"
+    ],
+    "description": "Хирург, онкохирург, доктор медицинских наук, заместитель директора по научной работе ИОНХ им. В.Т. Зайцева НАМН Украины. 40 лет практики, 5000+ операций, 121 публикация, 18 патентов."
+  }
+  </script>
+{% endblock %}
+
+{% block announce %}
+  <a href="{{ '/contacts/' | url }}" style="color: inherit; text-decoration: none;">
+    📞 Запись на консультацию — <strong>+38 067 570-79-49</strong> · Telegram · Email →
+  </a>
+{% endblock %}

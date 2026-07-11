@@ -10,6 +10,9 @@ author: Prof. Sergey V. Sushkov
 
 Добро пожаловать на образовательную платформу профессора Сушкова Сергея Валентиновича — хирурга с 40-летним стажем, доктора медицинских наук, пионера лапароскопической хирургии в Харьковском регионе.
 
+[Записаться на консультацию :material-arrow-right:](./contacts.md){ .md-button .md-button--primary }
+[Второе мнение по случаю](./articles/second-opinion-checklist.md){ .md-button }
+
 ## Направления
 
 - **Хирургия** — лапароскопические операции, миниинвазивные технологии
@@ -46,6 +49,7 @@ author: Prof. Sergey V. Sushkov
 - [О профессоре](./about.md)
 - [Экспертная деятельность](./expertise/index.md)
 - [Статьи](./articles/index.md)
+- [Контакты и запись](./contacts.md)
 - [Консультации](./consultations.md)
 - [Рекомендую](./recommend.md)
 - [Поддержать](./support.md)

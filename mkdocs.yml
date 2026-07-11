@@ -1,13 +1,14 @@
-site_name: proffssv.site
+site_name: Профессор Сушков С.В. — хирург, онкохирург
 site_url: https://proffssv.site
-site_description: Образовательная платформа профессора Сушкова С.В. — курсы, лекции, статьи по хирургии и онкологии.
+site_description: Профессор Сушков Сергей Валентинович — хирург, онкохирург, д.мед.н. Консультации, второе мнение, экспертиза, статьи по хирургии, онкологии и науке.
 site_author: Prof. Sergey V. Sushkov
 repo_url: https://github.com/Serg2206/proffssv.site
 edit_uri: edit/master/docs/
-copyright: "© 2026 Prof. Sergey V. Sushkov. Все материалы предназначены для образовательных целей."
+copyright: "© 2026 Проф. С.В. Сушков. Информация носит ознакомительный характер и не заменяет очной консультации врача."
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: indigo
@@ -86,5 +87,6 @@ nav:
   - Курсы:
       - Основы лапароскопической холецистэктомии: courses/laparoscopic-cholecystectomy-basics.md
   - Консультации: consultations.md
+  - Контакты и запись: contacts.md
   - Рекомендую: recommend.md
   - Поддержать: support.md
