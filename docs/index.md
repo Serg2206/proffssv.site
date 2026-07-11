@@ -43,7 +43,8 @@ author: Prof. Sergey V. Sushkov
 
 ## Быстрые ссылки
 
-- [О проекте](./about.md)
+- [О профессоре](./about.md)
+- [Экспертная деятельность](./expertise/index.md)
 - [Консультации](./consultations.md)
 - [Рекомендую](./recommend.md)
 - [Поддержать](./support.md)
@@ -51,4 +52,4 @@ author: Prof. Sergey V. Sushkov
 
 ---
 
-*Последнее обновление: 6 июля 2026*
+*Последнее обновление: 11 июля 2026*

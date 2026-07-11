@@ -66,7 +66,13 @@ markdown_extensions:
 nav:
   - Главная: index.md
   - О профессоре: about.md
-  - Экспертная деятельность: expert.md
+  - Экспертиза:
+      - Обзор направлений: expertise/index.md
+      - Клиническая экспертиза: expertise/clinical-expertise.md
+      - Научно-редакционные услуги: expertise/scientific-editing.md
+      - Международный медицинский туризм: expertise/medical-tourism.md
+      - Академическое сотрудничество: expertise/academic-cooperation.md
+      - AI и цифровая медицина: expertise/ai-digital-medicine.md
   - Курсы:
       - Основы лапароскопической холецистэктомии: courses/laparoscopic-cholecystectomy-basics.md
   - Консультации: consultations.md
