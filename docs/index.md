@@ -54,7 +54,3 @@ author: Prof. Sergey V. Sushkov
 - [Рекомендую](./recommend.md)
 - [Поддержать](./support.md)
 - [Канал на YouTube](https://www.youtube.com/@SSVproff-22.06)
-
----
-
-*Последнее обновление: 11 июля 2026*

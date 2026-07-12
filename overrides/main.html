@@ -8,8 +8,10 @@
   {% set desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
   {% set image = config.site_url ~ "assets/og-cover.png" %}
 
+  {% set og_type = "article" if page and page.url.startswith("articles/") and page.url != "articles/" else "website" %}
+
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ og_type }}">
   <meta property="og:site_name" content="Профессор Сушков С.В.">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ desc }}">
@@ -46,10 +48,29 @@
     "description": "Хирург, онкохирург, доктор медицинских наук, заместитель директора по научной работе ИОНХ им. В.Т. Зайцева НАМН Украины. 40 лет практики, 5000+ операций, 121 публикация, 18 патентов."
   }
   </script>
+
+  {% if page and page.url.startswith("courses/") and page.url != "courses/" %}
+  <!-- Schema.org: Course -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "{{ page.title }}",
+    "description": "{{ desc }}",
+    "url": "{{ page.canonical_url }}",
+    "inLanguage": "ru",
+    "provider": {
+      "@type": "Person",
+      "name": "Профессор Сушков Сергей Валентинович",
+      "url": "https://proffssv.site"
+    }
+  }
+  </script>
+  {% endif %}
 {% endblock %}
 
 {% block announce %}
   <a href="{{ '/contacts/' | url }}" style="color: inherit; text-decoration: none;">
-    📞 Запись на консультацию — <strong>+38 067 570-79-49</strong> · Telegram · Email →
+    📞 Запись на консультацию — <strong>+38 067 570-79-49</strong> · Viber/WhatsApp · Email →
   </a>
 {% endblock %}

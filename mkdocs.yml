@@ -9,6 +9,7 @@ copyright: "© 2026 Проф. С.В. Сушков. Информация носи
 theme:
   name: material
   custom_dir: overrides
+  language: ru
   palette:
     - scheme: default
       primary: indigo
@@ -45,7 +46,8 @@ extra:
       name: Buy Me a Coffee
 
 plugins:
-  - search
+  - search:
+      lang: ru
 
 markdown_extensions:
   - admonition
