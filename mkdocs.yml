@@ -34,6 +34,9 @@ theme:
   favicon: assets/favicon.svg
 
 extra:
+  analytics:
+    provider: google
+    property: G-849M3X6NTX
   social:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@SSVproff-22.06
