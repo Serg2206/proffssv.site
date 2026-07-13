@@ -19,7 +19,7 @@ description: Запись на консультацию к профессору 
 - :material-email: **Email**
 
     ---
-    [**ssvnauka@gmail.com**](mailto:ssvnauka@gmail.com)
+    [**ssvproff@gmail.com**](mailto:ssvproff@gmail.com)
 
     Для документов и заочных запросов
 
