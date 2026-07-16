@@ -29,6 +29,12 @@ theme:
     - navigation.indexes
     - content.code.copy
     - content.code.annotate
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
   icon:
     logo: material/account-heart
   favicon: assets/favicon.svg
@@ -51,6 +57,10 @@ extra:
 plugins:
   - search:
       lang: ru
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
 
 markdown_extensions:
   - admonition

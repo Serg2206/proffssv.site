@@ -1,13 +1,42 @@
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
+```
+# Dependencies
+.config/pypoetry/
 
-# OS / editor
-.DS_Store
-Thumbs.db
+# Logs and temp files
+*.log
 *.tmp
 
-# MkDocs build
-site/
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Build directories
+dist/
+build/
+*.egg-info/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Original rules preserved
+*.log
+```
