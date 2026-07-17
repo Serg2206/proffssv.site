@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:10.6
+    container_name: ssvproff_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - ssvproff_net
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  wordpress:
+    image: wordpress:latest
+    container_name: ssvproff_wp
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - wp_data:/var/www/html
+      - ./wp-plugins:/var/www/html/wp-content/plugins
+      - ./wp-themes:/var/www/html/wp-content/themes
+      - ./uploads:/var/www/html/wp-content/uploads
+    networks:
+      - ssvproff_net
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: ssvproff_pma
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - ssvproff_net
+
+volumes:
+  db_data:
+  wp_data:
+
+networks:
+  ssvproff_net:
+    driver: bridge
