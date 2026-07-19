@@ -1,5 +1,26 @@
 # ssvnauka.net — анализ и план настройки
 
+> **Обновление от 19.07.2026 (после работ на стороне Vercel)**
+>
+> 1. **Конечный домен — `ssvnauka.com`**, а не ssvnauka.net: сам ssvnauka.net
+>    настроен в Vercel как 307-редирект на ssvnauka.com, поэтому все
+>    редиректы ведут сразу на ssvnauka.com (Vercel запрещает цепочки).
+> 2. DNS ssvnauka.com проверен: NS у **Cloudflare**
+>    (`teagan/joaquin.ns.cloudflare.com`), апекс `A 216.198.79.1, 64.29.17.1`
+>    (Vercel), `www` → CNAME `3f68b5ce40728f36.vercel-dns-017.com` — **тот же
+>    Vercel-проект**, что и у ssvnauka.net. Есть TXT-верификация Google
+>    (`7F8yMkmu…`) и SPF `include:_spf.domain.com.ua`.
+> 3. Выполнено в Vercel: `proffssv.site` и `www.proffssv.site` перенесены в
+>    проект `ssvnauka-net`, включён **301-редирект → https://ssvnauka.com/**
+>    (проверено напрямую через IP Vercel). CNAME `www` в зоне корректен
+>    (misconfigured: false).
+> 4. **Осталось:** в зоне proffssv.site на DNS-хостинге (**adm.tools /
+>    ukraine.com.ua**) удалить с апекса `A 185.199.109.153 / 110.153 /
+>    111.153`, оставить только `A 76.76.21.21` (запись `.108` в зоне
+>    отсутствует). Пока записи живы, ~3 из 4 запросов уходят на GitHub Pages.
+>    TTL 3600 — распространение до часа. После этого — шаг 4 (отключение
+>    GitHub Pages) и шаг 5 (SEO, целью указывать **ssvnauka.com**).
+
 Дата анализа: 19.07.2026. Проверка выполнялась по DNS-записям обеих зон, состоянию
 репозитория `Serg2206/proffssv.site` и истории деплоев GitHub Actions.
 Содержимое живых сайтов из среды анализа недоступно (сетевые ограничения),
@@ -123,14 +144,19 @@ SPF уже указывает на Google. Если почта на Google Works
 
 ## 3. Краткий чеклист
 
-- [ ] ssvnauka.net и www открываются с новым сайтом и валидным TLS
-- [ ] В DNS proffssv.site удалены IP GitHub Pages (185.199.x)
-- [ ] proffssv.site добавлен в Vercel-проект как redirect-домен → ssvnauka.net
-- [ ] `curl -I https://proffssv.site/` возвращает 301/308 на ssvnauka.net
+- [x] proffssv.site добавлен в Vercel-проект `ssvnauka-net` как redirect-домен
+- [x] 301-редирект proffssv.site и www → https://ssvnauka.com/ (проверен через IP Vercel)
+- [ ] В DNS proffssv.site (adm.tools) удалены IP GitHub Pages (185.199.x),
+      оставлен только `A 76.76.21.21`
+- [ ] После распространения DNS (TTL 3600): `curl -I https://proffssv.site/`
+      стабильно возвращает 301 на ssvnauka.com
 - [ ] GitHub Pages отключён, CNAME-файлы и workflow удалены
 - [ ] Репозиторий архивирован (если это финальное решение)
-- [ ] Search Console: Change of Address + sitemap нового сайта
-- [ ] DKIM/DMARC добавлены в Wix DNS
+- [ ] Search Console: Change of Address на **ssvnauka.com** + sitemap
+- [ ] Решение: оставить ли ssvnauka.net как 307-редирект или сделать его
+      основным (тогда пересобрать роли доменов в Vercel-проекте)
+- [ ] DKIM/DMARC для почтового домена (SPF ssvnauka.com указывает на
+      domain.com.ua, ssvnauka.net — на Google; стоит унифицировать)
 
 ---
 
