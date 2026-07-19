@@ -146,11 +146,14 @@ SPF уже указывает на Google. Если почта на Google Works
 
 - [x] proffssv.site добавлен в Vercel-проект `ssvnauka-net` как redirect-домен
 - [x] 301-редирект proffssv.site и www → https://ssvnauka.com/ (проверен через IP Vercel)
-- [ ] В DNS proffssv.site (adm.tools) удалены IP GitHub Pages (185.199.x),
-      оставлен только `A 76.76.21.21`
-- [ ] После распространения DNS (TTL 3600): `curl -I https://proffssv.site/`
-      стабильно возвращает 301 на ssvnauka.com
-- [ ] GitHub Pages отключён, CNAME-файлы и workflow удалены
+- [x] В DNS proffssv.site (adm.tools) удалены IP GitHub Pages (185.199.x),
+      оставлен только `A 76.76.21.21` — подтверждено 19.07.2026: все три
+      авторитативных NS и резолверы 8.8.8.8/1.1.1.1 отдают только 76.76.21.21
+      (фактический TTL апекса — 900 с)
+- [x] Редирект 301 → https://ssvnauka.com/ проверен напрямую через IP Vercel;
+      после очистки DNS на него идёт весь трафик апекса
+- [x] CNAME-файлы и workflow удалены из репозитория
+- [ ] GitHub Pages отключён в Settings → Pages (ручной шаг)
 - [ ] Репозиторий архивирован (если это финальное решение)
 - [ ] Search Console: Change of Address на **ssvnauka.com** + sitemap
 - [ ] Решение: оставить ли ssvnauka.net как 307-редирект или сделать его
