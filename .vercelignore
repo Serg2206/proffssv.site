@@ -1,0 +1,14 @@
+node_modules
+.git
+.env.local
+.env.*.local
+dist
+README.md
+DEPLOYMENT.md
+TEST_REPORT.md
+PROJECT_SUMMARY.md
+SSVNAUKA-NET-ANALYSIS.md
+.DS_Store
+*.log
+.vscode
+.idea
