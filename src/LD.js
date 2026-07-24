@@ -1,0 +1,4 @@
+// Восстановленный компонент: LD
+// Источник: CDSS Острый Живот 2026
+
+function LD(e,t){var n=it(!0),r=null,i=up,s=null,l=_w(u);e=typeof e=="function"?e:e===void 0?RD:it(e),t=typeof t=="function"?t:t===void 0?BD:it(t);function u(f){var h,p=(f=Tw(f)).length,m,v=!1,S;for(r==null&&(s=i(S=l())),h=0;h<=p;++h)!(h<p&&n(m=f[h],h,f))===v&&((v=!v)?s.lineStart():s.lineEnd()),v&&s.point(+e(m,h,f),+t(m,h,f));if(S)return s=null,S+""||null}return u.x=function(f){return arguments.length?(e=typeof f=="function"?f:it(+f),u):e},u.y=function(f){return arguments.length?(t=typeof f=="function"?f:it(+f),u):t},u.defined=function(f){return arguments.length?(n=typeof f=="function"?f:it(!!f),u):n},u.curve=function(f){return arguments.length?(i=f,r!=null&&(s=i(r)),u):i},u.context=function(f){return arguments.length?(f==null?r=s=null:s=i(r=f),u):r},u}

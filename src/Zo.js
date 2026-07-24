@@ -1,0 +1,4 @@
+// Восстановленный компонент: Zo
+// Источник: CDSS Острый Живот 2026
+
+function Zoe(e,t,n,r,i,s){var l=(r||[]).slice(),u=l.length,f=t.start,h=t.end;if(s){var p=r[u-1],m=n(p,u-1),v=e*(p.coordinate+e*m/2-h);l[u-1]=p=Jt(Jt({},p),{},{tickCoord:v>0?p.coordinate-v*e:p.coordinate});var S=zh(e,p.tickCoord,function(){return m},f,h);S&&(h=p.tickCoord-e*(m/2+i),l[u-1]=Jt(Jt({},p),{},{isShow:!0}))}for(var A=s?u-1:u,w=function(j){var O=l[j],C,T=function(){return C===void 0&&(C=n(O,j)),C};if(j===0){var M=e*(O.coordinate-e*T()/2-f);l[j]=O=Jt(Jt({},O),{},{tickCoord:M<0?O.coordinate-M*e:O.coordinate})}else l[j]=O=Jt(Jt({},O),{},{tickCoord:O.coordinate});var P=zh(e,O.tickCoord,T,f,h);P&&(f=O.tickCoord+e*(T()/2+i),l[j]=Jt(Jt({},O),{},{isShow:!0}))},b=0;b<A;b++)w(b);return l}

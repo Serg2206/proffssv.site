@@ -1,0 +1,4 @@
+// Восстановленный компонент: T8
+// Источник: CDSS Острый Живот 2026
+
+function T8(a,o){var c=He;He|=2;var d=g_(),y=x_();tt!==a||Be!==o?(Nf=null,Pf=Xt()+500,$o(a,o)):Ro=il(a,o);e:do try{if(We!==0&&De!==null){o=De;var g=An;t:switch(We){case 1:We=0,An=null,Io(a,o,g,1);break;case 2:case 9:if(C2(g)){We=0,An=null,S_(o);break}o=function(){We!==2&&We!==9||tt!==a||(We=7),Ar(a)},g.then(o,o);break e;case 3:We=7;break e;case 4:We=5;break e;case 7:C2(g)?(We=0,An=null,S_(o)):(We=0,An=null,Io(a,o,g,7));break;case 5:var E=null;switch(De.tag){case 26:E=De.memoizedState;case 5:case 27:var D=De;if(E?oT(E):D.stateNode.complete){We=0,An=null;var z=D.sibling;if(z!==null)De=z;else{var Z=D.return;Z!==null?(De=Z,Rf(Z)):De=null}break t}}We=0,An=null,Io(a,o,g,5);break;case 6:We=0,An=null,Io(a,o,g,6);break;case 8:gy(),yt=6;break e;default:throw Error(r(462))}}j8();break}catch(ne){y_(a,ne)}while(!0);return Hr=bi=null,N.H=d,N.A=y,He=c,De!==null?0:(tt=null,Be=0,Ju(),yt)}

@@ -1,0 +1,4 @@
+// Восстановленный компонент: Qr
+// Источник: CDSS Острый Живот 2026
+
+function Qr(a,o,c){for(c=c&&(o.subtreeFlags&8772)!==0,o=o.child;o!==null;){var d=o.alternate,y=a,g=o,E=g.flags;switch(g.tag){case 0:case 11:case 15:Qr(y,g,c),kl(4,g);break;case 1:if(Qr(y,g,c),d=g,y=d.stateNode,typeof y.componentDidMount=="function")try{y.componentDidMount()}catch(Z){Ye(d,d.return,Z)}if(d=g,y=d.updateQueue,y!==null){var D=d.stateNode;try{var z=y.shared.hiddenCallbacks;if(z!==null)for(y.shared.hiddenCallbacks=null,y=0;y<z.length;y++)B2(z[y],D)}catch(Z){Ye(d,d.return,Z)}}c&&E&64&&KO(g),Dl(g,g.return);break;case 27:ZO(g);case 26:case 5:Qr(y,g,c),c&&d===null&&E&4&&YO(g),Dl(g,g.return);break;case 12:Qr(y,g,c);break;case 31:Qr(y,g,c),c&&E&4&&n_(y,g);break;case 13:Qr(y,g,c),c&&E&4&&r_(y,g);break;case 22:g.memoizedState===null&&Qr(y,g,c),Dl(g,g.return);break;case 30:break;default:Qr(y,g,c)}o=o.sibling}}

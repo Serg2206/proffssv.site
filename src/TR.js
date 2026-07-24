@@ -1,0 +1,4 @@
+// Восстановленный компонент: TR
+// Источник: CDSS Острый Живот 2026
+
+function TR(e){if(e.includes(es))return es;for(var t=e;t.includes("*")||t.includes("/");){var n,r=(n=q5.exec(t))!==null&&n!==void 0?n:[],i=rh(r,4),s=i[1],l=i[2],u=i[3],f=fd.parse(s??""),h=fd.parse(u??""),p=l==="*"?f.multiply(h):f.divide(h);if(p.isNaN())return es;t=t.replace(q5,p.toString())}for(;t.includes("+")||/.-\d+(?:\.\d+)?/.test(t);){var m,v=(m=U5.exec(t))!==null&&m!==void 0?m:[],S=rh(v,4),A=S[1],w=S[2],b=S[3],_=fd.parse(A??""),j=fd.parse(b??""),O=w==="+"?_.add(j):_.subtract(j);if(O.isNaN())return es;t=t.replace(U5,O.toString())}return t}

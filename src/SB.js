@@ -1,0 +1,4 @@
+// Восстановленный компонент: SB
+// Источник: CDSS Острый Живот 2026
+
+function SB(e,t,n,r){var i=arguments.length>4&&arguments[4]!==void 0?arguments[4]:0;if(!Number.isFinite((t-e)/(n-1)))return{step:new Je(0),tickMin:new Je(0),tickMax:new Je(0)};var s=bB(new Je(t).sub(e).div(n-1),r,i),l;e<=0&&t>=0?l=new Je(0):(l=new Je(e).add(t).div(2),l=l.sub(new Je(l).mod(s)));var u=Math.ceil(l.sub(e).div(s).toNumber()),f=Math.ceil(new Je(t).sub(l).div(s).toNumber()),h=u+f+1;return h>n?SB(e,t,n,r,i+1):(h<n&&(f=t>0?f+(n-h):f,u=t>0?u:u+(n-h)),{step:s,tickMin:l.sub(new Je(u).mul(s)),tickMax:l.add(new Je(f).mul(s))})}

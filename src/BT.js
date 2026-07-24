@@ -1,0 +1,4 @@
+// Восстановленный компонент: BT
+// Источник: CDSS Острый Живот 2026
+
+function BT(e,t,n,r,i,s){let l=(f,h)=>n[h]?f.route.id!==n[h].route.id:!0,u=(f,h)=>n[h].pathname!==f.pathname||n[h].route.path?.endsWith("*")&&n[h].params["*"]!==f.params["*"];return s==="assets"?t.filter((f,h)=>l(f,h)||u(f,h)):s==="data"?t.filter((f,h)=>{let p=r.routes[f.route.id];if(!p||!p.hasLoader)return!1;if(l(f,h)||u(f,h))return!0;if(f.route.shouldRevalidate){let m=f.route.shouldRevalidate({currentUrl:new URL(i.pathname+i.search+i.hash,window.origin),currentParams:n[0]?.params||{},nextUrl:new URL(e,window.origin),nextParams:f.params,defaultShouldRevalidate:!0});if(typeof m=="boolean")return m}return!0}):[]}

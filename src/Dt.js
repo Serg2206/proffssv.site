@@ -1,0 +1,4 @@
+// Восстановленный компонент: Dt
+// Источник: CDSS Острый Живот 2026
+
+function Dt(e,t,n,r){function i(s){return e(s=arguments.length===0?new Date:new Date(+s)),s}return i.floor=s=>(e(s=new Date(+s)),s),i.ceil=s=>(e(s=new Date(s-1)),t(s,1),e(s),s),i.round=s=>{const l=i(s),u=i.ceil(s);return s-l<u-s?l:u},i.offset=(s,l)=>(t(s=new Date(+s),l==null?1:Math.floor(l)),s),i.range=(s,l,u)=>{const f=[];if(s=i.ceil(s),u=u==null?1:Math.floor(u),!(s<l)||!(u>0))return f;let h;do f.push(h=new Date(+s)),t(s,u),e(s);while(h<s&&s<l);return f},i.filter=s=>Dt(l=>{if(l>=l)for(;e(l),!s(l);)l.setTime(l-1)},(l,u)=>{if(l>=l)if(u<0)for(;++u<=0;)for(;t(l,-1),!s(l););else for(;--u>=0;)for(;t(l,1),!s(l););}),n&&(i.count=(s,l)=>(Ex.setTime(+s),Mx.setTime(+l),e(Ex),e(Mx),Math.floor(n(Ex,Mx))),i.every=s=>(s=Math.floor(s),!isFinite(s)||!(s>0)?null:s>1?i.filter(r?l=>r(l)%s===0:l=>i.count(0,l)%s===0):i)),i}

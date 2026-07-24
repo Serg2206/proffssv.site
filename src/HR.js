@@ -1,0 +1,4 @@
+// Восстановленный компонент: HR
+// Источник: CDSS Острый Живот 2026
+
+function HR(){var e=Hw(),t=[0,1],n=!1,r;function i(s){var l=hZ(e(s));return isNaN(l)?r:n?Math.round(l):l}return i.invert=function(s){return e.invert(bP(s))},i.domain=function(s){return arguments.length?(e.domain(s),i):e.domain()},i.range=function(s){return arguments.length?(e.range((t=Array.from(s,lh)).map(bP)),i):t.slice()},i.rangeRound=function(s){return i.range(s).round(!0)},i.round=function(s){return arguments.length?(n=!!s,i):n},i.clamp=function(s){return arguments.length?(e.clamp(s),i):e.clamp()},i.unknown=function(s){return arguments.length?(r=s,i):r},i.copy=function(){return HR(e.domain(),t).round(n).clamp(e.clamp()).unknown(r)},Jn.apply(i,arguments),li(i)}

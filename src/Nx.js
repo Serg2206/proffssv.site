@@ -1,0 +1,4 @@
+// Восстановленный компонент: Nx
+// Источник: CDSS Острый Живот 2026
+
+function Nx(e){if(0<=e.y&&e.y<100){var t=new Date(Date.UTC(-1,e.m,e.d,e.H,e.M,e.S,e.L));return t.setUTCFullYear(e.y),t}return new Date(Date.UTC(e.y,e.m,e.d,e.H,e.M,e.S,e.L))}

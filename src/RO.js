@@ -1,0 +1,4 @@
+// Восстановленный компонент: RO
+// Источник: CDSS Острый Живот 2026
+
+function RO(a,o,c,d){var y=d.children,g=a!==null?a.memoizedState:null;if(a===null&&o.stateNode===null&&(o.stateNode={_visibility:1,_pendingMarkers:null,_retryCache:null,_transitions:null}),d.mode==="hidden"){if((o.flags&128)!==0){if(g=g!==null?g.baseLanes|c:c,a!==null){for(d=o.child=a.child,y=0;d!==null;)y=y|d.lanes|d.childLanes,d=d.sibling;d=y&~g}else d=0,o.child=null;return BO(a,o,g,c,d)}if((c&536870912)!==0)o.memoizedState={baseLanes:0,cachePool:null},a!==null&&sf(o,g!==null?g.cachePool:null),g!==null?$2(o,g):jm(),I2(o);else return d=o.lanes=536870912,BO(a,o,g!==null?g.baseLanes|c:c,c,d)}else g!==null?(sf(o,g.cachePool),$2(o,g),Da(),o.memoizedState=null):(a!==null&&sf(o,null),jm(),Da());return Ut(a,o,y,c),o.child}

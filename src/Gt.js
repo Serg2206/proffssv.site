@@ -1,0 +1,4 @@
+// Восстановленный компонент: Gt
+// Источник: CDSS Острый Живот 2026
+
+function Gt(e){var t=e.offset,n=t===void 0?5:t,r=_ee(e,xee),i=Pt({offset:n},r),s=i.viewBox,l=i.position,u=i.value,f=i.children,h=i.content,p=i.className,m=p===void 0?"":p,v=i.textBreakAll;if(!s||Me(u)&&Me(f)&&!k.isValidElement(h)&&!Ae(h))return null;if(k.isValidElement(h))return k.cloneElement(h,i);var S;if(Ae(h)){if(S=k.createElement(h,i),k.isValidElement(S))return S}else S=Cee(i);var A=Ree(s),w=ge(i,!0);if(A&&(l==="insideStart"||l==="insideEnd"||l==="end"))return Nee(i,S,w);var b=A?kee(i):Dee(i);return I.createElement(xs,Qc({className:je("recharts-label",m)},w,b,{breakAll:v}),S)}

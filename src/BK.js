@@ -1,0 +1,4 @@
+// Восстановленный компонент: BK
+// Источник: CDSS Острый Живот 2026
+
+function BK(){if(wC)return A0;wC=1;var e=kK(),t=xw(),n=DK(),r=sR(),i=RK(),s=xa(),l=OD(),u="[object Map]",f="[object Object]",h="[object Promise]",p="[object Set]",m="[object WeakMap]",v="[object DataView]",S=l(e),A=l(t),w=l(n),b=l(r),_=l(i),j=s;return(e&&j(new e(new ArrayBuffer(1)))!=v||t&&j(new t)!=u||n&&j(n.resolve())!=h||r&&j(new r)!=p||i&&j(new i)!=m)&&(j=function(O){var C=s(O),T=C==f?O.constructor:void 0,M=T?l(T):"";if(M)switch(M){case S:return v;case A:return u;case w:return h;case b:return p;case _:return m}return C}),A0=j,A0}

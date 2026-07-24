@@ -1,0 +1,4 @@
+// Восстановленный компонент: U8
+// Источник: CDSS Острый Живот 2026
+
+function U8(){if(typeof performance.getEntriesByType=="function"){for(var a=0,o=0,c=performance.getEntriesByType("resource"),d=0;d<c.length;d++){var y=c[d],g=y.transferSize,E=y.initiatorType,D=y.duration;if(g&&D&&U_(E)){for(E=0,D=y.responseEnd,d+=1;d<c.length;d++){var z=c[d],Z=z.startTime;if(Z>D)break;var ne=z.transferSize,oe=z.initiatorType;ne&&U_(oe)&&(z=z.responseEnd,E+=ne*(z<D?1:(D-Z)/(z-Z)))}if(--d,o+=8*(g+E)/(y.duration/1e3),a++,10<a)break}}if(0<a)return o/a/1e6}return navigator.connection&&(a=navigator.connection.downlink,typeof a=="number")?a:5}

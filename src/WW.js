@@ -1,0 +1,4 @@
+// Восстановленный компонент: WW
+// Источник: CDSS Острый Живот 2026
+
+function WW(e){var t=e.allowEscapeViewBox,n=e.coordinate,r=e.offsetTopLeft,i=e.position,s=e.reverseDirection,l=e.tooltipBox,u=e.useTranslate3d,f=e.viewBox,h,p,m;return l.height>0&&l.width>0&&n?(p=A5({allowEscapeViewBox:t,coordinate:n,key:"x",offsetTopLeft:r,position:i,reverseDirection:s,tooltipDimension:l.width,viewBox:f,viewBoxDimension:f.width}),m=A5({allowEscapeViewBox:t,coordinate:n,key:"y",offsetTopLeft:r,position:i,reverseDirection:s,tooltipDimension:l.height,viewBox:f,viewBoxDimension:f.height}),h=KW({translateX:p,translateY:m,useTranslate3d:u})):h=FW,{cssProperties:h,cssClasses:GW({translateX:p,translateY:m,coordinate:n})}}

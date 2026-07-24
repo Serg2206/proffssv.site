@@ -1,0 +1,4 @@
+// Восстановленный компонент: Fc
+// Источник: CDSS Острый Живот 2026
+
+function Fc(e){if(!(t=ZX.exec(e)))throw new Error("invalid format: "+e);var t;return new Vw({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}
