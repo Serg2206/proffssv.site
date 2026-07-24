@@ -1,4 +1,0 @@
-// Восстановленный компонент: IG
-// Источник: CDSS Острый Живот 2026
-
-function IG(){var e=it([]),t=s1,n=ps,r=LG;function i(s){var l=Array.from(e.apply(this,arguments),$G),u,f=l.length,h=-1,p;for(const m of s)for(u=0,++h;u<f;++u)(l[u][h]=[0,+r(m,l[u].key,h,s)]).data=m;for(u=0,p=Tw(t(l));u<f;++u)l[p[u]].index=u;return n(l,p),l}return i.keys=function(s){return arguments.length?(e=typeof s=="function"?s:it(Array.from(s)),i):e},i.value=function(s){return arguments.length?(r=typeof s=="function"?s:it(+s),i):r},i.order=function(s){return arguments.length?(t=s==null?s1:typeof s=="function"?s:it(Array.from(s)),i):t},i.offset=function(s){return arguments.length?(n=s??ps,i):n},i}

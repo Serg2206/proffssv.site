@@ -1,4 +1,0 @@
-// Восстановленный компонент: PR
-// Источник: CDSS Острый Живот 2026
-
-function PR(e,t,n=0,r=1/0,i){if(t=Math.floor(t),n=Math.floor(Math.max(0,n)),r=Math.floor(Math.min(e.length-1,r)),!(n<=t&&t<=r))return e;for(i=i===void 0?CR:hX(i);r>n;){if(r-n>600){const f=r-n+1,h=t-n+1,p=Math.log(f),m=.5*Math.exp(2*p/3),v=.5*Math.sqrt(p*m*(f-m)/f)*(h-f/2<0?-1:1),S=Math.max(n,Math.floor(t-h*m/f+v)),A=Math.min(r,Math.floor(t+(f-h)*m/f+v));PR(e,t,S,A,i)}const s=e[t];let l=n,u=r;for(rc(e,n,t),i(e[r],s)>0&&rc(e,n,r);l<u;){for(rc(e,l,u),++l,--u;i(e[l],s)<0;)++l;for(;i(e[u],s)>0;)--u}i(e[n],s)===0?rc(e,n,u):(++u,rc(e,u,r)),u<=t&&(n=u+1),t<=u&&(r=u-1)}return e}

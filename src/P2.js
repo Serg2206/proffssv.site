@@ -1,4 +1,0 @@
-// Восстановленный компонент: P2
-// Источник: CDSS Острый Живот 2026
-
-function P2(a,o,c){switch(c=a[c],c===void 0?a.push(o):c!==o&&(o.then(Ir,Ir),o=c),o.status){case"fulfilled":return o.value;case"rejected":throw a=o.reason,k2(a),a;default:if(typeof o.status=="string")o.then(Ir,Ir);else{if(a=tt,a!==null&&100<a.shellSuspendCounter)throw Error(r(482));a=o,a.status="pending",a.then(function(d){if(o.status==="pending"){var y=o;y.status="fulfilled",y.value=d}},function(d){if(o.status==="pending"){var y=o;y.status="rejected",y.reason=d}})}switch(o.status){case"fulfilled":return o.value;case"rejected":throw a=o.reason,k2(a),a}throw Oi=o,jo}}

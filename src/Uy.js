@@ -1,4 +1,0 @@
-// Восстановленный компонент: Uy
-// Источник: CDSS Острый Живот 2026
-
-function Uy(a,o,c,d){if(Wf){var y=Hy(d);if(y===null)Ey(a,o,d,Yf,c),pT(a,d);else if(p9(y,a,o,c,d))d.stopPropagation();else if(pT(a,d),o&4&&-1<h9.indexOf(a)){for(;y!==null;){var g=lo(y);if(g!==null)switch(g.tag){case 3:if(g=g.stateNode,g.current.memoizedState.isDehydrated){var E=di(g.pendingLanes);if(E!==0){var D=g;for(D.pendingLanes|=2,D.entangledLanes|=2;E;){var z=1<<31-gn(E);D.entanglements[1]|=z,E&=~z}Ar(g),(He&6)===0&&(Pf=Xt()+500,zl(0))}}break;case 31:case 13:D=vi(g,2),D!==null&&hn(D,g,2),kf(),qy(g,2)}if(g=Hy(d),g===null&&Ey(a,o,d,Yf,c),g===y)break;y=g}y!==null&&d.stopPropagation()}else Ey(a,o,d,null,c)}}

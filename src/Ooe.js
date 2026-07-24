@@ -1,4 +1,0 @@
-// Восстановленный компонент: Ooe
-// Источник: CDSS Острый Живот 2026
-
-function Ooe(e){var t=e.x,n=e.y,r=e.segment,i=e.xAxisId,s=e.yAxisId,l=e.shape,u=e.className,f=e.alwaysShow,h=aoe(),p=x6(i),m=b6(s),v=soe();if(!h||!v)return null;fa(f===void 0,'The alwaysShow prop is deprecated. Please use ifOverflow="extendDomain" instead.');var S=uA({x:p.scale,y:m.scale}),A=kt(t),w=kt(n),b=r&&r.length===2,_=Aoe(S,A,w,b,v,e.position,p.orientation,m.orientation,e);if(!_)return null;var j=voe(_,2),O=j[0],C=O.x,T=O.y,M=j[1],P=M.x,R=M.y,B=Pr(e,"hidden")?"url(#".concat(h,")"):void 0,U=k3(k3({clipPath:B},ge(e,!0)),{},{x1:C,y1:T,x2:P,y2:R});return I.createElement(Ie,{className:je("recharts-reference-line",u)},woe(l,U),Gt.renderCallByParent(e,Gie({x1:C,y1:T,x2:P,y2:R})))}

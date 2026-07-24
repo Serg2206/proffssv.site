@@ -1,4 +1,0 @@
-// Восстановленный компонент: WR
-// Источник: CDSS Острый Живот 2026
-
-function WR(e,t,n,r,i,s){const l=[[Ui,1,sa],[Ui,5,5*sa],[Ui,15,15*sa],[Ui,30,30*sa],[s,1,Kn],[s,5,5*Kn],[s,15,15*Kn],[s,30,30*Kn],[i,1,la],[i,3,3*la],[i,6,6*la],[i,12,12*la],[r,1,pa],[r,2,2*pa],[n,1,Xw],[t,1,SP],[t,3,3*SP],[e,1,Cx]];function u(h,p,m){const v=p<h;v&&([h,p]=[p,h]);const S=m&&typeof m.range=="function"?m:f(h,p,m),A=S?S.range(h,+p+1):[];return v?A.reverse():A}function f(h,p,m){const v=Math.abs(p-h)/m,S=$w(([,,b])=>b).right(l,v);if(S===l.length)return e.every(S1(h/Cx,p/Cx,m));if(S===0)return fh.every(Math.max(S1(h,p,m),1));const[A,w]=l[v/l[S-1][2]<l[S][2]/v?S-1:S];return A.every(w)}return[u,f]}

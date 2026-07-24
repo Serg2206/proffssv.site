@@ -1,4 +1,0 @@
-// Восстановленный компонент: Vc
-// Источник: CDSS Острый Живот 2026
-
-function Vc(e){var t,n;return e=(e+"").trim().toLowerCase(),(t=bX.exec(e))?(n=t[1].length,t=parseInt(t[1],16),n===6?nP(t):n===3?new mn(t>>8&15|t>>4&240,t>>4&15|t&240,(t&15)<<4|t&15,1):n===8?dd(t>>24&255,t>>16&255,t>>8&255,(t&255)/255):n===4?dd(t>>12&15|t>>8&240,t>>8&15|t>>4&240,t>>4&15|t&240,((t&15)<<4|t&15)/255):null):(t=SX.exec(e))?new mn(t[1],t[2],t[3],1):(t=wX.exec(e))?new mn(t[1]*255/100,t[2]*255/100,t[3]*255/100,1):(t=AX.exec(e))?dd(t[1],t[2],t[3],t[4]):(t=OX.exec(e))?dd(t[1]*255/100,t[2]*255/100,t[3]*255/100,t[4]):(t=_X.exec(e))?iP(t[1],t[2]/100,t[3]/100,1):(t=TX.exec(e))?iP(t[1],t[2]/100,t[3]/100,t[4]):J5.hasOwnProperty(e)?nP(J5[e]):e==="transparent"?new mn(NaN,NaN,NaN,0):null}

@@ -1,4 +1,0 @@
-// Восстановленный компонент: V9
-// Источник: CDSS Острый Живот 2026
-
-function V9(e,t,n=!1){let{routesMeta:r}=e,i={},s="/",l=[];for(let u=0;u<r.length;++u){let f=r[u],h=u===r.length-1,p=s==="/"?t:t.slice(s.length)||"/",m={path:f.relativePath,caseSensitive:f.caseSensitive,end:h},v=f.matcher&&f.compiledParams?u4(m,p,f.matcher,f.compiledParams):Dd(m,p),S=f.route;if(!v&&h&&n&&!r[r.length-1].route.index&&(v=Dd({path:f.relativePath,caseSensitive:f.caseSensitive,end:!1},p)),!v)return null;Object.assign(i,v.params),l.push({params:i,pathname:pr([s,v.pathname]),pathnameBase:W9(pr([s,v.pathnameBase])),route:S}),v.pathnameBase!=="/"&&(s=pr([s,v.pathnameBase]))}return l}

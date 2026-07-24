@@ -1,4 +1,0 @@
-// Восстановленный компонент: VR
-// Источник: CDSS Острый Живот 2026
-
-function VR(){var e=[],t=[],n=[],r;function i(){var l=0,u=Math.max(1,t.length);for(n=new Array(u-1);++l<u;)n[l-1]=gX(e,l/u);return s}function s(l){return l==null||isNaN(l=+l)?r:t[Tu(n,l)]}return s.invertExtent=function(l){var u=t.indexOf(l);return u<0?[NaN,NaN]:[u>0?n[u-1]:e[0],u<n.length?n[u]:e[e.length-1]]},s.domain=function(l){if(!arguments.length)return e.slice();e=[];for(let u of l)u!=null&&!isNaN(u=+u)&&e.push(u);return e.sort(ni),i()},s.range=function(l){return arguments.length?(t=Array.from(l),i()):t.slice()},s.unknown=function(l){return arguments.length?(r=l,s):r},s.quantiles=function(){return n.slice()},s.copy=function(){return VR().domain(e).range(t).unknown(r)},Jn.apply(s,arguments)}

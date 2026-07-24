@@ -1,4 +1,0 @@
-// Восстановленный компонент: LK
-// Источник: CDSS Острый Живот 2026
-
-function LK(){if(AC)return O0;AC=1;var e=ZD(),t=tR(),n=vK(),r=NK(),i=BK(),s=yn(),l=rR(),u=iR(),f=1,h="[object Arguments]",p="[object Array]",m="[object Object]",v=Object.prototype,S=v.hasOwnProperty;function A(w,b,_,j,O,C){var T=s(w),M=s(b),P=T?p:i(w),R=M?p:i(b);P=P==h?m:P,R=R==h?m:R;var B=P==m,U=R==m,$=P==R;if($&&l(w)){if(!l(b))return!1;T=!0,B=!1}if($&&!B)return C||(C=new e),T||u(w)?t(w,b,_,j,O,C):n(w,b,P,_,j,O,C);if(!(_&f)){var H=B&&S.call(w,"__wrapped__"),K=U&&S.call(b,"__wrapped__");if(H||K){var Q=H?w.value():w,W=K?b.value():b;return C||(C=new e),O(Q,W,_,j,C)}}return $?(C||(C=new e),r(w,b,_,j,O,C)):!1}return O0=A,O0}

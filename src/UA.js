@@ -1,4 +1,0 @@
-// Восстановленный компонент: UA
-// Источник: CDSS Острый Живот 2026
-
-function UA(a){var o=lo(a);if(o&&(a=o.stateNode)){var c=a[sn]||null;e:switch(a=o.stateNode,o.type){case"input":if(qp(a,c.value,c.defaultValue,c.defaultValue,c.checked,c.defaultChecked,c.type,c.name),o=c.name,c.type==="radio"&&o!=null){for(c=a;c.parentNode;)c=c.parentNode;for(c=c.querySelectorAll('input[name="'+kn(""+o)+'"][type="radio"]'),o=0;o<c.length;o++){var d=c[o];if(d!==a&&d.form===a.form){var y=d[sn]||null;if(!y)throw Error(r(90));qp(d,y.value,y.defaultValue,y.defaultValue,y.checked,y.defaultChecked,y.type,y.name)}}for(o=0;o<c.length;o++)d=c[o],d.form===a.form&&BA(d)}break e;case"textarea":$A(a,c.value,c.defaultValue);break e;case"select":o=c.value,o!=null&&fo(a,!!c.multiple,o,!1)}}}

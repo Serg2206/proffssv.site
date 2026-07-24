@@ -1,4 +1,0 @@
-// Восстановленный компонент: U4
-// Источник: CDSS Острый Живот 2026
-
-function U4(e,t){let n=!1,r=!0;const i={delta:0,timestamp:0,isProcessing:!1},s=()=>n=!0,l=rd.reduce((O,C)=>(O[C]=y7(s),O),{}),{setup:u,read:f,resolveKeyframes:h,preUpdate:p,update:m,preRender:v,render:S,postRender:A}=l,w=()=>{const O=ri.useManualTiming,C=O?i.timestamp:performance.now();n=!1,O||(i.delta=r?1e3/60:Math.max(Math.min(C-i.timestamp,v7),1)),i.timestamp=C,i.isProcessing=!0,u.process(i),f.process(i),h.process(i),p.process(i),m.process(i),v.process(i),S.process(i),A.process(i),i.isProcessing=!1,n&&t&&(r=!1,e(w))},b=()=>{n=!0,r=!0,i.isProcessing||e(w)};return{schedule:rd.reduce((O,C)=>{const T=l[C];return O[C]=(M,P=!1,R=!1)=>(n||b(),T.schedule(M,P,R)),O},{}),cancel:O=>{for(let C=0;C<rd.length;C++)l[rd[C]].cancel(O)},state:i,steps:l}}

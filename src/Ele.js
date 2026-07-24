@@ -1,4 +1,0 @@
-// Восстановленный компонент: Ele
-// Источник: CDSS Острый Живот 2026
-
-function Ele(e){var t,n,r=e.element,i=e.tooltipEventType,s=e.isActive,l=e.activeCoordinate,u=e.activePayload,f=e.offset,h=e.activeTooltipIndex,p=e.tooltipAxisBandSize,m=e.layout,v=e.chartName,S=(t=r.props.cursor)!==null&&t!==void 0?t:(n=r.type.defaultProps)===null||n===void 0?void 0:n.cursor;if(!r||!S||!s||!l||v!=="ScatterChart"&&i!=="axis")return null;var A,w=cs;if(v==="ScatterChart")A=l,w=Sre;else if(v==="BarChart")A=Ale(m,l,f,p),w=cA;else if(m==="radial"){var b=V6(l),_=b.cx,j=b.cy,O=b.radius,C=b.startAngle,T=b.endAngle;A={cx:_,cy:j,startAngle:C,endAngle:T,innerRadius:O,outerRadius:O},w=zB}else A={points:Ole(m,l,f)},w=cs;var M=xd(xd(xd(xd({stroke:"#ccc",pointerEvents:"none"},f),A),ge(S,!1)),{},{payload:u,payloadIndex:h,className:je("recharts-tooltip-cursor",S.className)});return k.isValidElement(S)?k.cloneElement(S,M):k.createElement(w,M)}

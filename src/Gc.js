@@ -1,4 +1,0 @@
-// Восстановленный компонент: Gc
-// Источник: CDSS Острый Живот 2026
-
-function Gc(e,t){var n,r,i,s,l,u,f,h,p,m=1,v=10,S=e,A=S.d,w=S.constructor,b=w.precision;if(S.s<1)throw Error(Zn+(S.s?"NaN":"-Infinity"));if(S.eq(Mn))return new w(0);if(t==null?(ft=!1,h=b):h=t,S.eq(10))return t==null&&(ft=!0),qx(w,h);if(h+=v,w.precision=h,n=Tr(A),r=n.charAt(0),s=Et(S),Math.abs(s)<15e14){for(;r<7&&r!=1||r==1&&n.charAt(1)>3;)S=S.times(e),n=Tr(S.d),r=n.charAt(0),m++;s=Et(S),r>1?(S=new w("0."+n),s++):S=new w(r+"."+n.slice(1))}else return f=qx(w,h+2,b).times(s+""),S=Gc(new w(r+"."+n.slice(1)),h-v).plus(f),w.precision=b,t==null?(ft=!0,at(S,b)):S;for(u=l=S=da(S.minus(Mn),S.plus(Mn),h),p=at(S.times(S),h),i=3;;){if(l=at(l.times(p),h),f=u.plus(da(l,new w(i),h)),Tr(f.d).slice(0,h)===Tr(u.d).slice(0,h))return u=u.times(2),s!==0&&(u=u.plus(qx(w,h+2,b).times(s+""))),u=da(u,new w(m),h),w.precision=b,t==null?(ft=!0,at(u,b)):u;u=f,i+=2}}

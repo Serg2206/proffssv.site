@@ -1,4 +1,0 @@
-// Восстановленный компонент: FR
-// Источник: CDSS Острый Живот 2026
-
-function FR(){var e=0,t=1,n=1,r=[.5],i=[0,1],s;function l(f){return f!=null&&f<=f?i[Tu(r,f,0,n)]:s}function u(){var f=-1;for(r=new Array(n);++f<n;)r[f]=((f+1)*t-(f-n)*e)/(n+1);return l}return l.domain=function(f){return arguments.length?([e,t]=f,e=+e,t=+t,u()):[e,t]},l.range=function(f){return arguments.length?(n=(i=Array.from(f)).length-1,u()):i.slice()},l.invertExtent=function(f){var h=i.indexOf(f);return h<0?[NaN,NaN]:h<1?[e,r[0]]:h>=n?[r[n-1],t]:[r[h-1],r[h]]},l.unknown=function(f){return arguments.length&&(s=f),l},l.thresholds=function(){return r.slice()},l.copy=function(){return FR().domain([e,t]).range(i).unknown(s)},Jn.apply(li(l),arguments)}

@@ -1,4 +1,0 @@
-// Восстановленный компонент: NK
-// Источник: CDSS Острый Живот 2026
-
-function NK(){if(vC)return g0;vC=1;var e=PK(),t=1,n=Object.prototype,r=n.hasOwnProperty;function i(s,l,u,f,h,p){var m=u&t,v=e(s),S=v.length,A=e(l),w=A.length;if(S!=w&&!m)return!1;for(var b=S;b--;){var _=v[b];if(!(m?_ in l:r.call(l,_)))return!1}var j=p.get(s),O=p.get(l);if(j&&O)return j==l&&O==s;var C=!0;p.set(s,l),p.set(l,s);for(var T=m;++b<S;){_=v[b];var M=s[_],P=l[_];if(f)var R=m?f(P,M,_,l,s,p):f(M,P,_,s,l,p);if(!(R===void 0?M===P||h(M,P,u,f,p):R)){C=!1;break}T||(T=_=="constructor")}if(C&&!T){var B=s.constructor,U=l.constructor;B!=U&&"constructor"in s&&"constructor"in l&&!(typeof B=="function"&&B instanceof B&&typeof U=="function"&&U instanceof U)&&(C=!1)}return p.delete(s),p.delete(l),C}return g0=i,g0}

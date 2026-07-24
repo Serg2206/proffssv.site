@@ -1,4 +1,0 @@
-// Восстановленный компонент: Vo
-// Источник: CDSS Острый Живот 2026
-
-function Vo(a){function o(z){return Zf(z,a)}Ha!==null&&Zf(Ha,a),Va!==null&&Zf(Va,a),Fa!==null&&Zf(Fa,a),Kl.forEach(o),Wl.forEach(o);for(var c=0;c<Ga.length;c++){var d=Ga[c];d.blockedOn===a&&(d.blockedOn=null)}for(;0<Ga.length&&(c=Ga[0],c.blockedOn===null);)mT(c),c.blockedOn===null&&Ga.shift();if(c=(a.ownerDocument||a).$$reactFormReplay,c!=null)for(d=0;d<c.length;d+=3){var y=c[d],g=c[d+1],E=y[sn]||null;if(typeof g=="function")E||vT(c);else if(E){var D=null;if(g&&g.hasAttribute("formAction")){if(y=g,E=g[sn]||null)D=E.formAction;else if(Vy(y)!==null)continue}else D=E.action;typeof D=="function"?c[d+1]=D:(c.splice(d,3),d-=3),vT(c)}}}

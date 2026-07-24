@@ -1,4 +1,0 @@
-// Восстановленный компонент: Se
-// Источник: CDSS Острый Живот 2026
-
-function Se(G,V,Y,ie){if(Y==null)throw Error(r(151));for(var xe=null,ze=null,ve=V,Ne=V=0,Le=null,qe=Y.next();ve!==null&&!qe.done;Ne++,qe=Y.next()){ve.index>Ne?(Le=ve,ve=null):Le=ve.sibling;var Ka=J(G,ve,qe.value,ie);if(Ka===null){ve===null&&(ve=Le);break}a&&ve&&Ka.alternate===null&&o(G,ve),V=g(Ka,V,Ne),ze===null?xe=Ka:ze.sibling=Ka,ze=Ka,ve=Le}if(qe.done)return c(G,ve),$e&&Ur(G,Ne),xe;if(ve===null){for(;!qe.done;Ne++,qe=Y.next())qe=oe(G,qe.value,ie),qe!==null&&(V=g(qe,V,Ne),ze===null?xe=qe:ze.sibling=qe,ze=qe);return $e&&Ur(G,Ne),xe}for(ve=d(ve);!qe.done;Ne++,qe=Y.next())qe=ee(ve,G,Ne,qe.value,ie),qe!==null&&(a&&qe.alternate!==null&&ve.delete(qe.key===null?Ne:qe.key),V=g(qe,V,Ne),ze===null?xe=qe:ze.sibling=qe,ze=qe);return a&&ve.forEach(function(v9){return o(G,v9)}),$e&&Ur(G,Ne),xe}
